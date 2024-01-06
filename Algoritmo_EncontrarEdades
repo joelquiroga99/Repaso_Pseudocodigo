@@ -3,53 +3,53 @@
 // Datos de Entrada: num_edad1, num_edad2 y num_edad3 como enteros
 // Informacion de Salida: "mayor:" num_edad1 y "menor:" num_edad1 como enteros, escribir "mayor de edad" o "menor de eedad" segun corresponda.
 // Variables:num_edad1, num_edad2, num_edad3, num_edadmayor, num_edadmenor como enteros
-// DISEÑO:
-// Dividir el problema en etapas simples.
-// Entrada de datos: pedir al usuario ingresar 3 edades.
-// Datos a solicitar: edad_1, edad_2 y edad_3 como entero
-// Comparacion: comparar los numeros para hallar el mayor y menor.
-// Salida de datos: Escribir "el mayor es:" edad_mayor y "el menor es:" edad_menor
-// refinamiento de las etapas con formulas.
+
+//DISEÑO:
+//Definición del problema: Determinar el mayor y menor de 3 edades dadas por el usuario.
+//Datos de Entrada:num_edad1, num_edad2, y num_edad3 como enteros.
+//Información de Salida:"mayor:" num_edadmayor y "menor:" num_edadmenor como enteros. Escribir "mayor de edad" o "menor de edad" según corresponda.
+//Variables:num_edad1, num_edad2, num_edad3, num_edadmayor, num_edadmenor como enteros.
+
 // PSEUDOCODIGO:
 Algoritmo EncontrarEdades
 	
-    Definir edad_1, edad_2, edad_3, edad_mayor, edad_menor Como Entero
+    Definir num_edad1, num_edad2, num_edad3, num_edadmayor, num_edadmenor Como Entero
     
     Escribir 'Ingrese primera edad:'
-    Leer edad_1
+    Leer num_edad1
     Escribir 'Ingrese segunda edad:'
-    Leer edad_2
+    Leer num_edad2
     Escribir 'Ingrese tercera edad:'
-    Leer edad_3
+    Leer num_edad3
     
-    edad_mayor <- edad_1
-    edad_menor <- edad_1
+    num_edadmayor <- num_edad1
+    num_edadmenor <- num_edad1
     
-    Si edad_2 > edad_mayor Entonces
-        edad_mayor <- edad_2
+    Si num_edad2 > num_edadmayor Entonces
+        num_edadmayor <- num_edad2
     Sino
-        Si edad_2 < edad_menor Entonces
-            edad_menor <- edad_2
+        Si num_edad2 < num_edadmenor Entonces
+            num_edadmenor <- num_edad2
         FinSi
     FinSi
     
-    Si edad_3 > edad_mayor Entonces
-        edad_mayor <- edad_3
+    Si num_edad3 > num_edadmayor Entonces
+        num_edadmayor <- num_edad3
     Sino
-        Si edad_3 < edad_menor Entonces
-            edad_menor <- edad_3
+        Si num_edad3 < num_edadmenor Entonces
+            num_edadmenor <- num_edad3
         FinSi
     FinSi
     
-    Escribir 'El mayor es:', edad_mayor
-    Si edad_mayor >= 18 Entonces
+    Escribir 'El mayor es:', num_edadmayor
+    Si num_edadmayor >= 18 Entonces
         Escribir "Es mayor de edad."
     Sino
         Escribir "Es menor de edad."
     FinSi
     
-    Escribir 'El menor es:', edad_menor
-    Si edad_menor >= 18 Entonces
+    Escribir 'El menor es:', num_edadmenor
+    Si num_edadmenor >= 18 Entonces
         Escribir "Es mayor de edad."
     Sino
         Escribir "Es menor de edad."
